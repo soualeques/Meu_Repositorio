@@ -1,0 +1,137 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root
+{
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: white;
+    --main-color: #00abf0;
+}
+html
+{
+    font-size: 63.5%;
+    overflow-x: hidden;
+}
+body
+{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background-color: transparent;
+}
+.logo
+{
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+.menu a
+{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: all .3s ease-in-out;
+}
+.menu a:hover, .menu a.active
+{
+    opacity: .8;
+    color: var(--main-color);
+}
+#menu-icon
+{
+    font-size: 3.6rem;
+    cursor: pointer;
+    color: var(--text-color);
+    display: none;
+}
+section
+{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.home
+{
+    display: flex;
+    align-items: center;
+    padding: 0 9%; 
+}
+.content
+{
+    max-width: 60rem;
+}
+.content h1
+{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+.content .text-animated
+{
+    position: relative;
+    width: 32.8rem;
+}
+.content .text-animated h3
+{
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: .7px var(--main-color);
+}
+.content p
+{
+    font-size: 1.8rem;
+    margin-bottom: 4.8rem;
+}
+.btn-box
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 34.5rem;
+    height: 5rem;
+    margin-top: 3.2rem;
+}
+.btn-box .btn
+{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 15rem;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    box-shadow: none;
+    text-decoration: none;
+    border-radius: 2rem;
+    transition: all .6s ease;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--bg-color);
+    letter-spacing: .1rem;
+}
