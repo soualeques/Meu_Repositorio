@@ -1,44 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portifólio, Alex Nascimento, Projetos, Oportunidades, Desenvolvedor">
     <link rel="stylesheet" href="./CSS/style.css">
-
    <!---------------------------box icons-------------------------------------->
    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Meu Portifólio</title>
 </head>
 <body>
    <header class="header">
-        <a href="#" class="logo">SOUALEQUES</a>
+        <a href="#" class="logo" >SOUALEQUES</a>
         <div class="bx bx-menu" id="menu-icon"></div>
 
         <nav class="menu">
-            <a href="#home" class="active">HOME</a>
-            <a href="#about">ABOUT ME</a>
-            <a href="#projects">PROJECTS</a>
-            <a href="#contact">CONTACT</a>
+            <a href="#home" class="active">INICIO</a>
+            <a href="#about">SOBRE MIM</a>
+            <a href="#projects">PROGETOS</a>
+            <a href="#contact">CONTATO</a>
         </nav>
    </header>
    <!-------------------------------- Home Section ----------------------------------------->   
    <section class="home" id="home">
     <div class="content">
-        <h1>Hi, I'm 
+        <h1>Olá, eu sou
             <span>Alex Nascimento</span>
         </h1>
         <div class="text-animated">
-            <h3>developer</h3>
+            <h3>Analista e Desenvolvedor de Sistemas</h3>
         </div>
-        <img src="./IMG/Alex.PNG" alt="">
-        <p>just a developer who is always learning and growing.</p>
+        <img src="./IMG/Alex.PNG" alt="foto de perfil profissional de Alex Nascimento.">
+        <p>
+            Formado em Analise e Desenvolvimento de Sistemas pela Unopar em busca de conhecimento e
+            oportunidades para me tornar um profissional completo no mercado.
+        </p>
         <div class="btn-box">
             <a href="#" class="btn">
-                Hire me
+                Contrate-me
             </a>
             <a href="#" class="btn">
-                Let's talk
+                Vamos bater um papo!
             </a>
         </div>
     </div>
@@ -52,23 +54,20 @@
    <section class="about" id="about">
     <h2 class="heading">About<span> me</span></h2>
     <div class="about-img">
-        <img src="./IMG/Alex_about.PNG" alt="">
+        <img src="./IMG/Alex_about.PNG" alt="foto de Alex estudando">
         <span class="circle-span"></span>
     </div>
     <div class="about-content">
         <h3>Developer</h3>
-        <p>I am Alex Nascimento, born in Brazil on February 15th
-            of 1987. Currently residing in the city of Curitiba,
-            Parana State. I have been developing software since 2014,
-            starting with HTML, CSS, JavaScript and PHP. In 2016, I started
-            to learn more advanced languages such as C# .NET Framework,
-            Java EE and Spring Boot. Since then, I have had experience working
-            with databases (SQL Server, MySQL), frameworks (ASP.Net MVC, JPA /
-            Hibernate, Spring Boot) and technologies like AngularJS, ReactJS
-            and VueJs. Besides programming, my hobbies include playing guitar,
-            watching movies and listening to music. My goal is to be able to contribute
-            positively to projects that require technical skills, being part of a team
-            and helping others achieve their goals.
+        <p>
+            Olá, prazer! me chamo Alex Nascimento do Carmo, tenho 23 anos de idade e atualmente estou morando
+            em Curitiba, Paraná, no Brasil.
+            Estou sempre aprendendo novas linguagens e frameworks, pois acredito que
+            a evolução é fundamental na área de TI. Meus interesses incluem:
+            programação web com PHP, Java e Python; desenvolvimento mobile com React Native e K
+            otlin; além de ter experiência com banco de dados MySQL e MongoDB.
+            quando não estou programando pode me encontrar jogando vídeo-game ou assistindo séries.
+            Quando não estou praticando Taekwondo, uma luta sul-coreana.
         </p>
         <div class="btn-box btns">
             <a href="#" class="btn">Read more</a>
@@ -90,11 +89,11 @@
                     <label>Full Name</label>
                 </div>
                 <div class="contact-input">
-                    <input type="tel" name="phone" required="">
+                    <input type="tel" name="telefone" id="telefone" required="" maxlength="11" placeholder="(xx)xxxxx-xxxx">
                     <label>Phone Number</label>
                 </div>
                 <div class="contact-input">
-                    <input type="email" name="email" required="">
+                    <input type="email" name="email" required="" placeholder="xxxxxxxxx@gmail.com">
                     <label>E-mail</label>
                 </div>
                 <div class="contact-input">
@@ -116,5 +115,20 @@
         </form>
     </div>
    </section>
+   <!--------------------------------- footer design ----------------------->
+   <footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2024 by Alex Nascimento do Carmo | All Right Reserved.</p>
+    </div>
+    <div class="footer-icontop">
+        <a href=""><i class='bx bx-chevrons-up'></i></a>
+    </div>
+   </footer>
+   <script src="./Scripts/main.js"></script>
+   <script>
+    $(document).ready(function(){
+    $('#telefone').mask('(00) 0000-0000#');
+});
+   </script>
 </body>
 </html>
