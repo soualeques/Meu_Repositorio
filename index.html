@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portifólio, Alex Nascimento, Projetos, Oportunidades, Desenvolvedor">
     <link rel="stylesheet" href="./CSS/style.css">
-   <!---------------------------box icons-------------------------------------->
+    <!---------------------------box icons-------------------------------------->
    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Meu Portifólio</title>
 </head>
@@ -17,7 +17,7 @@
         <nav class="menu">
             <a href="#home" class="active">INICIO</a>
             <a href="#about">SOBRE MIM</a>
-            <a href="#projects">PROGETOS</a>
+            <a href="#projects">PROjETOS</a>
             <a href="#contact">CONTATO</a>
         </nav>
    </header>
@@ -52,13 +52,13 @@
    </section>
    <!------------------- section about me -------------------------------->
    <section class="about" id="about">
-    <h2 class="heading">About<span> me</span></h2>
+    <h2 class="heading">Sobre<span> Mim</span></h2>
     <div class="about-img">
         <img src="./IMG/Alex_about.PNG" alt="foto de Alex estudando">
         <span class="circle-span"></span>
     </div>
     <div class="about-content">
-        <h3>Developer</h3>
+        <h3>Analista e desenvolvedor de sistemas</h3>
         <p>
             Olá, prazer! me chamo Alex Nascimento do Carmo, tenho 23 anos de idade e atualmente estou morando
             em Curitiba, Paraná, no Brasil.
@@ -76,21 +76,49 @@
    </section>
    <!------------------- section projects ------------------------------->
    <section class="projects" id="projects">
-    <h2 class="heading">My <span>Projects</span></h2>
+    <h2 class="heading">Meus Projetos em <span>Destaque</span></h2>
+    <div class="interface">
+        <div class="flex">
+            <a href="https://soualeques.github.io/Aplicativo_de_Clima/" target="_blank">
+                <div class="img-project" style="background-image: url(./IMG/Clima.jpeg);">
+                    <div class="overlay">
+                        <h4>APLICATIVO DE CLIMA</h4>
+                        <p>verifica a condição e temperatura da cidade pesquisada</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://soualeques.github.io/Forum_signos/" target="_blank">
+                <div class="img-project" style="background-image: url(./IMG/projeto_signo.png);">
+                    <div class="overlay">
+                        <h4>HORÓSCOPO</h4>
+                        <p>mostra o signo da pessoa e detalha um pouco sobre de acordo com a data de nascimento fornecida pelo usuário</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://soualeques.github.io/Forum_signos/" target="_blank">
+                <div class="img-project" style="background-image: url(./IMG/projeto_signo.png);">
+                    <div class="overlay">
+                        <h4>HORÓSCOPO</h4>
+                        <p>mostra o signo da pessoa e detalha um pouco sobre de acordo com a data de nascimento fornecida pelo usuário</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
    </section>
    <!------------------- section contact me ----------------------------->
    <section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me</span></h2>
+    <h2 class="heading">Fale <span>Comigo</span></h2>
     <div class="contact">
         <form name="contact" action="#" method="get">
             <div class="input-box">
                 <div class="contact-input">
                     <input type="text" name="" required="">
-                    <label>Full Name</label>
+                    <label>Nome Completo</label>
                 </div>
                 <div class="contact-input">
                     <input type="tel" name="telefone" id="telefone" required="" maxlength="11" placeholder="(xx)xxxxx-xxxx">
-                    <label>Phone Number</label>
+                    <label>Número de telefone</label>
                 </div>
                 <div class="contact-input">
                     <input type="email" name="email" required="" placeholder="xxxxxxxxx@gmail.com">
@@ -99,18 +127,16 @@
                 <div class="contact-input">
                     <textarea class="text-area-field" name="menssage" id="menssage" cols="20" rows="10" placeholder="sua mensagem"></textarea>
                 </div>
-                <div class="content-btn">
                     <div class="btn-box btns">
                         <button type="submit" class="btn">
-                            submit
+                            Enviar
                         </button> 
                     </div>
                     <div class="btn-box btns">
                         <button type="reset" class="btn">
-                            reset
+                            Cancelar
                         </button> 
                     </div>
-                </div>
             </div>
         </form>
     </div>

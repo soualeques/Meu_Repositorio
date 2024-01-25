@@ -41,7 +41,7 @@ body
     display: flex;
     justify-content:space-around;
     align-items: center;
-    z-index: 10;
+    z-index: 2;
     background-color: transparent;
     margin-right: 2rem;
     transition: .3s ease-in-out;
@@ -49,6 +49,8 @@ body
 .header.sticky
 {
     background: rgba(0, 0, 0, .6);
+    z-index: 2;
+    width: 100vw;
 }
 .logo
 {
@@ -65,7 +67,7 @@ body
     transition: all .3s ease-in-out;
     flex-wrap: wrap;
     padding: .3rem;
-    z-index: 100;
+    z-index: 2;
 
 }
 .menu a:hover, .menu a.active
@@ -82,9 +84,11 @@ body
 } 
 section
 {
-    min-width: 100%;
-    min-height: 100%;
+    width: 100vw;
+    height: 100vh;
     padding: 8rem;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px white;
 }
 .home
 {
@@ -95,12 +99,11 @@ section
 .content
 {
     max-width: 60rem;
-    z-index: 10;
 }
 .home .content img
 {
-    width: 40rem;
-    height: 40rem;
+    width: 40vw;
+    height: 60vh;
     margin-bottom: 4rem;
     border-radius: 50%;
     position:absolute;
@@ -108,7 +111,6 @@ section
     margin-left: 50%;
     transition: ease-in 0.5s;
     z-index: -2;
-
 }
 .home .content img:hover
 {
@@ -122,7 +124,6 @@ section
     letter-spacing: -1px;
     text-transform: uppercase;
     color: var(--text-color);
-    z-index: 1;
 }
 .content h1 span
 {
@@ -139,7 +140,6 @@ section
     font-size: 3.2rem;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: .7px var(--main-color);
     background-image: linear-gradient(var(--main-color),var(--main-color));
     background-repeat: no-repeat;
     -webkit-background-clip: text;
@@ -188,17 +188,18 @@ input::placeholder
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 15rem;
+    width: 18rem;
     background: var(--main-color);
     border: .2rem solid var(--main-color);
     box-shadow: none;
     text-decoration: none;
     border-radius: 2rem;
     transition: all .6s ease;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--bg-color);
     letter-spacing: .1rem;
+    margin: .6rem;
 }
 .btn-box .btn:hover
 {
@@ -258,20 +259,16 @@ input::placeholder
 /* -----------about-------------- */
 .about
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    min-height: 50vh;
+    padding-bottom: 1rem;
     background: var(--second-bg-color);
-    padding: 1rem;
-    margin:auto;
+    position: relative;
 }
 .heading
 {
     font-size: 4rem;
     text-align: center;
-    padding-top: 3%;
+    padding-top: 0.3%;
 }
 .heading span
 {
@@ -327,6 +324,80 @@ input::placeholder
     display: inline-block;
     width: 15rem;
     margin-bottom: 15rem;
+}
+/* -----------------projetos -------------------------------*/
+.interface
+{
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+section.projects .flex
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+section.projects .flex a
+{
+    color: var(--text-color);
+}
+
+
+.img-project
+{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 3s;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+}
+.img-project:hover
+{
+    background-position: 50% 100%;
+}
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: .5s;
+}
+.overlay:hover
+{
+    opacity: 1;
+    display: flex;
+    justify-content:flex-start;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+.overlay h4
+{
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+.overlay p
+{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+#anterior,#posterior
+{
+    width: 40px;
 }
 /* ----------------------- contact------------------------------*/
 .contact
@@ -428,19 +499,9 @@ textarea:focus
 {
     background: var(--bg-color);
 }
-.btn-box.btns .btn
+button
 {
     cursor: pointer;
-    height: 5rem;
-}
-.content-btn
-{
-    display: flex;
-    padding: 0;
-    font-weight: bold;
-    line-height: 5rem;
-    justify-content: center;
-    align-items: center;
 }
 /*============ footer ============== */
 .footer
@@ -460,10 +521,11 @@ textarea:focus
 .footer-icontop a
 {
     position: relative;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: .8rem;
+    margin-right: 2rem;
     background: var(--main-color);
     border: .2rem solid var(--main-color);
     border-radius: .6rem;
