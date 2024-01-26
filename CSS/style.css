@@ -90,6 +90,16 @@ section
     box-sizing: border-box;
     box-shadow: 0 0 10px white;
 }
+.heading
+{
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 0.3%;
+}
+.heading span
+{
+    color:var(--sub-color);
+}
 .home
 {
     display: flex;
@@ -262,19 +272,7 @@ input::placeholder
     min-height: 50vh;
     padding-bottom: 1rem;
     background: var(--second-bg-color);
-    position: relative;
 }
-.heading
-{
-    font-size: 4rem;
-    text-align: center;
-    padding-top: 0.3%;
-}
-.heading span
-{
-    color:var(--sub-color);
-}
-
 .about-img
 {
     position: relative;
@@ -284,6 +282,9 @@ input::placeholder
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(67,94,143,0.36),0 8px 32px rgba(67, 94, 143, 0.28) !important;
 }
 .about-img img
 {
@@ -308,12 +309,21 @@ input::placeholder
 }
 .about-content
 {
-    text-align: center;
+    text-align: justify;
+    align-items: center;
 }
 .about-content h3
 {
-    font: 2.6rem;
+    font: inherit;
+    color: var(--text-dark-color);
+    font-size: 1.5em;
+    line-height: 1.2;
+    letter-spacing: -.01em;
+    font-weight: bold;
+    margin: 0;
+
 }
+
 .about-content p
 {
     font-size: 1.6rem;
@@ -395,10 +405,24 @@ section.projects .flex a
     font-size: 1.3rem;
     font-weight: 600;
 }
-#anterior,#posterior
+.tecnologias
 {
-    width: 40px;
+    margin-top: 5rem;
 }
+.tecnologias .icones-tecnologias 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    justify-content:center;
+}
+.tecnologias .icones-tecnologias i
+{
+    color: var(--main-color);
+    font-size: 2.5rem;
+}
+
 /* ----------------------- contact------------------------------*/
 .contact
 {
