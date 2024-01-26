@@ -14,13 +14,13 @@ Confira alguns dos meus projetos em destaque:
 ## Contato
 Se você quiser entrar em contato comigo, por favor, utilize um dos seguintes canais:
 
-#### <box-icon name='gmail' type='logo' ></box-icon> E-mail:
+#### E-mail:
 [alexnscmnt13@gmail.com](mailto:alexnscmnt13@gmail.com)
-#### <box-icon type='logo' name='linkedin'></box-icon> LinkedIn: Conecte-se comigo no LinkedIn.
+#### LinkedIn: Conecte-se comigo no LinkedIn.
 [Alex Nascimento](https://www.linkedin.com/in/soualeques)
-#### <box-icon name='github' type='logo' ></box-icon> GitHub: Confira meus repositórios no GitHub.
+#### GitHub: Confira meus repositórios no GitHub.
 [Meu Repositório](http://github.com/SouAleques)
-#### <box-icon name='instagram-alt' type='logo' ></box-icon> Instagram: Siga-me no Instagram.
+#### Instagram: Siga-me no Instagram.
 [@SouAleques](http://instagram.com/soualeques/)
 
 ## License:
