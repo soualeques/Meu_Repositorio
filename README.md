@@ -2,6 +2,9 @@
 ### Portfólio Pessoal de Alex Nascimento do Carmo
 Esse é o meu portfólio pessoal, onde você poderá conhecer um pouco sobre mim, minha formação e experiência como analista e desenvolvedor de sistemas. Além disso, você poderá ver alguns dos meus projetos em destaque e entrar em contato comigo por diferentes canais.
 
+## LINK:
+<a href="https://soualeques.github.io/Meu_Repositorio/"> acesse aqui meu portifólio! </a>
+
 ## Sobre mim
 Olá, prazer! Me chamo Alex Nascimento do Carmo, tenho 23 anos e moro em Curitiba, Paraná, no Brasil. Estou sempre em busca de novos desafios e aprendizados na área de TI, pois acredito que a evolução é fundamental nessa área. Minha formação é superior em Análise e Desenvolvimento de Sistemas pela Unopar.
 
